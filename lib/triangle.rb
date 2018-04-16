@@ -18,7 +18,7 @@ class Triangle
     when sides[0] == sides[2]
       :equilateral
     else
-      :scalene
+      :isosceles
     end
   end
 
