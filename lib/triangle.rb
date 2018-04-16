@@ -8,8 +8,8 @@ class Triangle
   end
 
   def kind
-    sides = [side_1, side_2, side_3].sort {|a, b| b-a}
-    
+    sides = [side_1, side_2, side_3].sort {|a, b| b - a}
+
     case
     when sides[0] >= sides[1] + sides[2] || sides[2] <= 0
       raise TriangleError
