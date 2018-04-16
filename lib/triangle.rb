@@ -1,3 +1,4 @@
+require 'pry'
 class Triangle
   attr_reader :side_1, :side_2, :side_3
 
@@ -9,6 +10,7 @@ class Triangle
 
   def kind
     sides = [self.side_1, self.side_2, self.side_3].sort
+    binding.pry
 
     case
     when sides[0] >= sides[1] + sides[2] || sides[2] <= 0
